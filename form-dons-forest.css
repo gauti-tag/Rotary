@@ -1,0 +1,233 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100%; /* Fixe la largeur maximale a  100% */
+  overflow-x: hidden; /* Desactive le defilement horizontal */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Utilisez vh au lieu de % pour couvrir toute la hauteur de la fenetre d'affichage */
+  flex-direction: column; /* Aligne les elements en colonne */
+}
+
+form {
+  max-width: 600px;
+  width: 100%; /* pour s'assurer que le formulaire prend toute la largeur disponible jusqu'Ã  600px */
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.blockmark {
+  max-width: 600px;
+  overflow: hidden;
+}
+.blockmark img {
+  object-fit: cover;
+  width: 100%;
+}
+.main-pic {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.item-thematic .contribute {
+  background-color: #2f7336;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  font-size: 1em;
+  height: 190px;
+}
+.item-thematic img {
+  height: 190px;
+  max-width: 240px;
+  object-fit: cover;
+}
+
+.identificationform {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.flexitems {
+  margin-bottom: 20px;
+}
+
+.identificationform input {
+  border: 1px solid white;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+section {
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.montant {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+}
+.style2-container {
+  background-color: white;
+  border-radius: none;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: none;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.style3-container {
+  background-color: rgba(161, 255, 206, 0.5);
+  border-radius: 0px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: none;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+section h2 {
+  font-family: "Helvetica, Arial, sans-serif";
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section p {
+  font-family: "Helvetica, Arial, sans-serif";
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+section button {
+  font-family: "Helvetica, Arial, sans-serif";
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+section button:hover {
+  filter: brightness(0.9);
+}
+
+/*styliser la modale*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60pqx;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.modal-close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modal-ok-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #0f9b0f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#modal-ok-btn:hover {
+  background-color: #0a7a0a;
+}
+
+/* Media queries */
+@media (max-width: 600px) {
+  .identificationform,
+  section,
+  form {
+    width: 100%;
+  }
+
+  div img,
+  section {
+    max-width: 100%;
+  }
+
+  .item-thematic .contribute {
+    background-color: #45b649;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.7em;
+    height: 170px;
+  }
+
+  .item-thematic img {
+    height: 170px;
+    max-width: 240px;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <!--META-VIGNETTE-->
+    <meta
+      property="og:title"
+      content="Votre contribution solidaire pour la forêt"
+    />
+    <meta
+      property="og:description"
+      content="Tu peux aussi contribuer financièrement à reboiser en faisant un
+              don par mobile money"
+    />
+    <meta
+      property="og:image"
+      content="https://topdigitalevel.site/form-dons-forest/images/Image-sensibiler-don-forest.jpg"
+    />
+    <!--META-VIGNETTE-->
+    <title>Votre contribution solidaire pour la forêt</title>
+    <link rel="stylesheet" href="form-dons-forest.css" />
+  </head>
+  <body>
+    <div class="blockmark">
+      <img src="images/logos-form-dons.jpg" alt="oragnisateur et partenaires" />
+    </div>
+    <form action="#" method="post" id="form-don">
+      <div class="main-pic">
+        <div class="item-thematic">
+          <div class="contribute">
+            <h1>Contribution solidaire pour la forêt</h1>
+            <p>
+              Tu peux aussi contribuer financièrement à reboiser en faisant un
+              don par mobile money
+            </p>
+          </div>
+        </div>
+        <div class="item-thematic">
+          <img
+            src="images/Image-sensibiler-don-forest.jpg"
+            alt="un don financier pour la forêt"
+          />
+        </div>
+      </div>
+      <section class="identificationform">
+        <h2 style="color: #0f9b0f">Plante 10 arbres</h2>
+        <p>
+          03 Années d'entretien <strong style="color: #0f9b0f">|</strong> 01
+          Pancarte en ton nom <strong style="color: #0f9b0f">|</strong> 01
+          Certificat de reconnaissance
+        </p>
+        <label for="name">Nom & Prénoms</label>
+        <input type="text" id="name" name="name" autocomplete="name" required />
+        <label for="email">Adresse email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          autocomplete="email"
+          required
+        />
+        <label for="phone">Téléphone</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" required />
+      </section>
+      <section class="style3-container">
+        <p>
+          <strong>NB</strong> : <br />
+          Pour les dons en dessous de 15 000 F.CFA vous recevrez votre
+          <strong>certificat de contribution</strong>. <br />
+          Pour les dons au dessus de 15 000 F.CFA vous avez une
+          <strong> plaque à votre nom</strong> sur le site de reboisement et un
+          certificat
+        </p>
+      </section>
+      <section class="style2-container montant">
+        <label for="montant">Saisir le montant de votre Don</label>
+        <input
+          type="number"
+          id="montant"
+          name="montant"
+          required
+          placeholder="*chiffres sans espaces"
+          style="
+            padding: 10px;
+            width: 180px;
+            text-align: center;
+            margin-top: 10px;
+          "
+        />
+      </section>
+      <section class="style2-container">
+        <button type="submit" style="margin: auto">Faire mon don</button>
+      </section>
+      <div class="modal">
+        <div class="modal-content">
+          <span class="modal-close-btn">&times;</span>
+          <p id="modal-message"></p>
+          <button id="modal-ok-btn">OK</button>
+        </div>
+      </div>
+    </form>
+    <script src="form-dons-forest.js"></script>
+  </body>
+</html>
